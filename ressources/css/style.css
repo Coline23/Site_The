@@ -82,7 +82,7 @@ section {
 
 /* HEADER *****************/
 header {
-    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url('./ressources/images/header-tea.jpg');
+    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url('../images/header-tea.jpg');
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -209,7 +209,7 @@ header {
 /* CLEINTS ***************/
 
 .clients {
-    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url(./ressources/images/clients/the-paysage.jpg);
+    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url(../images/clients/the-paysage.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
