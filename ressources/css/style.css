@@ -1,0 +1,387 @@
+/* INFOS DOC
+    - Document : Thés
+    - Version : 1.0.0
+    - Author : Coline
+*/
+
+/* COLORS 
+    - default body text #white
+    - h1 #eee
+    - h2 rgb(39, 39, 39)
+    - h3
+
+    - button
+    - button:hover
+
+    - border
+    - icons green
+*/
+
+/* FONTS
+    - Default : 
+    - Subtitles : 
+*/
+
+/* CSS DIRECTORY
+    1. Global
+    2. Header
+*/
+
+/* GLOBAL *****************/
+html {
+    background-color: white;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h2 {
+    color: rgb(39, 39, 39);
+    text-align: center;
+    font-size: 250%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: rgb(39, 39, 39);
+    font-size: 160%;
+}
+
+h4 {
+    color: rgb(39, 39, 39)
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: ' ';
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+/* HEADER *****************/
+header {
+    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url('/ressources/images/header-tea.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+}
+
+.home-title h1 span {
+    font-weight: 700;
+}
+
+.home-title p {
+    color: white;
+}
+
+/* BOUTON ***************/
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s;
+    margin-bottom: 20px;
+}
+
+.btn-full {
+    background-color: azure;
+    color: #5ee075;
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: 1px solid wheat;
+    color: white;
+}
+
+.btn-full:hover {
+    background-color: #5ee075 !important;
+    color: white !important;
+}
+
+.btn-ghost:hover {
+    background-color: #5ee075 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* PRODUITS ***************/
+
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    color: grey;
+    transform: translateX(20px);
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: green;
+    transition: all 1s;
+}
+
+/* FAMILLE DES THES ***************/
+
+.fam-the {
+    background-color: #bee2c5;
+}
+
+.details-fam {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.details-fam img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.details-fam h4 {
+    text-align: center;
+}
+
+/* GALERIE PHOTO ***************/
+
+.galerie-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: none;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.title-img {
+    position: relative;
+    bottom: -85%;
+    left: 40px;
+}
+
+.title-img h4 {
+    color: white;
+}
+
+/* CLEINTS ***************/
+
+.clients {
+    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url(/ressources/images/clients/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: white;
+}
+
+.clients h2:after {
+    background-color: white;
+}
+
+blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: white;
+}
+
+blockquote:before {
+    content:"\0022";
+    font-size: 800%;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    top: 66px;
+    left: -21px;
+    color: rgba(255,255,255,0.7);
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS ***************/
+
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pack h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: -2px;
+}
+
+.pack-premium {
+    background-color: rgb(36, 164, 36);
+    color: white;
+}
+
+.pack-premium h4 {
+    color: white;
+}
+
+.pack-title-premium {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  top: -126px;
+  right: -180px;
+  background-color: white;
+  color: green;
+  border-radius: 10px;
+  padding: 5px;
+  width: 133px;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.pack-contenu ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-contenu ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+    background-color: rgb(68, 201, 68);
+}
+
+.btn-pack {
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* CONTACT ***************/
+
+.phone p {
+    font-size: 120%;
+}
+
+.address p {
+    font-size: 120%;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: green;
+    color: white;
+    margin-right: 15px;
+}
+
+/* FOOTER ***************/
+footer {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    height: 60px;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+}
